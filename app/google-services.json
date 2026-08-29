@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "275691884127",
+    "project_id": "milaap-266f7",
+    "storage_bucket": "milaap-266f7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275691884127:android:8c35e05a168a0e105b95ea",
+        "android_client_info": {
+          "package_name": "com.milaap.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYfLDwdXP6ycbEiOEZsx3OVWnAfPx4kSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
