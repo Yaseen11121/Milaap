@@ -47,4 +47,5 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(libs.lifecycle.viewmodel)
 }
