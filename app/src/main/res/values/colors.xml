@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+    <color name="milaap_primary">#6C4AB6</color>
+    <color name="milaap_primary_dark">#52358F</color>
+    <color name="milaap_accent">#FF6B6B</color>
+
+    <color name="milaap_background">#FAF9FC</color>
+    <color name="milaap_surface">#FFFFFF</color>
+
+    <color name="milaap_text_primary">#1C1B1F</color>
+    <color name="milaap_text_secondary">#6F6B75</color>
+
+    <color name="milaap_dark_background">#121212</color>
+    <color name="milaap_dark_surface">#1E1E1E</color>
+    <color name="milaap_dark_text">#F5F5F5</color>
+
 </resources>

@@ -1,9 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Base.Theme.Milaap" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/milaap_primary</item>
+        <item name="colorOnPrimary">@color/milaap_surface</item>
+
+        <item name="colorSecondary">@color/milaap_accent</item>
+        <item name="colorOnSecondary">@color/milaap_surface</item>
+
+        <item name="android:fontFamily">sans</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/milaap_background</item>
+
+        <item name="android:navigationBarColor">@color/milaap_background</item>
+
+        <item name="android:windowActionModeOverlay">true</item>
+
     </style>
 
     <style name="Theme.Milaap" parent="Base.Theme.Milaap" />
+
 </resources>
