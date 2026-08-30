@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.NavOptions;
 
 import com.milaap.app.R;
 import com.milaap.app.databinding.FragmentLoginBinding;
@@ -105,6 +106,7 @@ public class LoginFragment extends Fragment {
 
     private void observeAuthState() {
 
+
         authViewModel.getLoading().observe(
                 getViewLifecycleOwner(),
                 isLoading -> {
@@ -135,16 +137,27 @@ public class LoginFragment extends Fragment {
                 getViewLifecycleOwner(),
                 success -> {
                     if (Boolean.TRUE.equals(success)) {
+
                         Toast.makeText(
                                 requireContext(),
                                 "Login successful!",
                                 Toast.LENGTH_SHORT
                         ).show();
 
-                        // Home navigation will be added next.
+                        NavOptions navOptions = new NavOptions.Builder()
+                                .setPopUpTo(R.id.loginFragment, true)
+                                .build();
+
+                        NavHostFragment.findNavController(this)
+                                .navigate(
+                                        R.id.homeFragment,
+                                        null,
+                                        navOptions
+                                );
                     }
                 }
         );
+
     }
 
     @Override

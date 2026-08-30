@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- POST HEADER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/ivPostProfile"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_profile"
+            android:background="#EEEEEE"
+            android:contentDescription="User profile" />
+
+        <TextView
+            android:id="@+id/tvPostUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:text="milaap_user"
+            android:textColor="#111111"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPostMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⋮"
+            android:textColor="#111111"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <!-- POST IMAGE -->
+
+    <ImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:background="#E8E8E8"
+        android:scaleType="centerCrop"
+        android:contentDescription="Post image" />
+
+    <!-- ACTIONS -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♡"
+            android:textColor="#111111"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="○"
+            android:textColor="#111111"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="↗"
+            android:textColor="#111111"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <!-- LIKES -->
+
+    <TextView
+        android:id="@+id/tvLikes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="0 likes"
+        android:textColor="#111111"
+        android:textStyle="bold" />
+
+    <!-- CAPTION -->
+
+    <TextView
+        android:id="@+id/tvCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Welcome to Milaap!"
+        android:textColor="#222222"
+        android:textSize="14sp" />
+
+</LinearLayout>

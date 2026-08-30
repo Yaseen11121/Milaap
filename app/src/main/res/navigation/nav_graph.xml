@@ -7,6 +7,7 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
 
+    <!-- LOGIN -->
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.milaap.app.auth.LoginFragment"
@@ -19,10 +20,58 @@
 
     </fragment>
 
+    <!-- REGISTER -->
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.milaap.app.auth.RegisterFragment"
         android:label="Register"
         tools:layout="@layout/fragment_register" />
+
+    <!-- HOME -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.milaap.app.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- SEARCH -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.milaap.app.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <!-- CREATE -->
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.milaap.app.posts.CreateFragment"
+        android:label="Create"
+        tools:layout="@layout/fragment_create" />
+
+    <!-- REELS -->
+    <fragment
+        android:id="@+id/reelsFragment"
+        android:name="com.milaap.app.reels.ReelsFragment"
+        android:label="Reels"
+        tools:layout="@layout/fragment_reels" />
+
+    <!-- PROFILE -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.milaap.app.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+    <!-- EDIT PROFILE -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.milaap.app.profile.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" />
 
 </navigation>
